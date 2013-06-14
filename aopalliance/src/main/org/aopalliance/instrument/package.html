@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+  </head>
+  <body bgcolor="white">
+    
+    <p>This package provides an API for program instrumentation. </p>
+    
+    <p>This package provides a set of interfaces for applying
+    intrumentations on a program, i.e. a program modification which
+    adds some feature (methods, classes, code) to the original
+    program. These instrumentations are abstractly defined and can
+    occur at compile-time, load-time, or runtime depending on the
+    {@link org.aopalliance.instrument.Instrumentor}
+    implementation. Moreover, since it uses the {@link
+    org.aopalliance.reflect} package which provides an abstract
+    representation of the program, the instrumentations can be
+    implemented at a source-code level or at a bytecode level,
+    depending on the implementation.
+
+    <p>This API is specific to AOP. This means that the set of program
+    instrumentations that is allowed is a restricted set compared to a
+    general-purpose API. However, general-purpose transformation
+    tools should provide an implementation of this API in order to be
+    easily used by several AO systems.
+
+    <h2>Dependencies</h2>
+     
+    <p>This package requires the {@link org.aopalliance.reflect} package.
+
+<!-- <p>It is typically used by <code>org.aopalliance.core</code>
+    package (but in an optional mode).  -->
+
+<!--
+<h2>Package Specification</h2>
+
+##### FILL IN ANY SPECS NEEDED BY JAVA COMPATIBILITY KIT #####
+<ul>
+  <li><a href="">##### REFER TO ANY FRAMEMAKER SPECIFICATION HERE #####</a>
+</ul>
+
+
+<h2>Related Documentation</h2>
+
+<p>For overviews, sources, tutorials, examples, guides, and tool documentation, please see:</p>
+<ul>
+  <li><a href=""></a>
+  <li><a href=""></a>
+</ul>
+
+-->
+
+<!-- Put @see and @since tags down here. -->
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>AOP Alliance</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="lang" content="en">
+    <link rel="stylesheet" type="text/css" href="basic.css"
+      title="basic style" media="all">
+  </head>
+
+  <body>
+
+    <div class=title>AOP Alliance (Java/J2EE AOP standards)</div>
+
+    <h1>Motiviations</h1>
+
+    <p>Aspect-Oriented Programming (AOP) is a programming technique
+    that will be able to enhance several existing middleware
+    environments (such as J2EE), or development environements
+    (e.g. JBuilder, Eclipse).
+
+    <p>Several projects now provide AOP-related techniques such as
+    generic proxies, interceptors, or bytecode translators.
+
+    <ul>
+    <li>
+	<a href="http://asm.objectweb.org">ASM</a>: a lightweight bytecode
+      translator.
+      </li>
+      <li>
+	<a href="http://www.eclipse.org/aspectj/">AspectJ</a>: an AO
+      source-level weaver. New Language.
+      </li><li>
+	<a href="http://aspectwerkz.sourceforge.net/">AspectWerkz</a>: an AO
+	framework (bytecode-level dynamic weaver+configuration).
+      </li><li>
+	<a href="http://jakarta.apache.org/bcel/">BCEL</a>: a bytecode
+      translator.
+      </li><li>
+	<a href="http://cglib.sf.net">CGLIB</a>: high-level API for class artifact manipulation and method interception.
+      </li><li>
+	<a href="http://jac.aopsys.com">JAC</a>: an AO middleware
+      (bytecode-level dynamic weaver+configuration+aspects). Framework.
+       </li><li>
+	<a
+      href="http://www.csg.is.titech.ac.jp/~chiba/javassist/">Javassist</a>:
+      a bytecode translator with a high-level API.
+       </li><li>
+	<a
+      href="http://www.jboss.org/index.html?module=html&op=userdisplay&id=developers/projects/jboss/aop">JBoss-AOP</a>:
+      interception and metadata-based AO framework.
+       </li><li>
+	<a
+      href="http://javalab.cs.uni-bonn.de/research/jmangler/">JMangler</a>:
+      a bytecode translator with a composition framework for translations.
+       </li><li>
+	<a href="http://nanning.sf.net">Nanning</a>: an AO weaver (framework).
+       </li><li>
+	<a href="http://prose.ethz.ch/">Prose</a>: an AO
+      bytecode-level dynamic weaver (framework).
+       </li><li>
+	... and many others (<a
+      href="mailto:renaud@aopsys.com">email me</a> to add a new one)
+      </li>
+    </ul>
+
+    <p>All these projects have their onw goals and
+      speficities. However, several common basic components are still
+      usefull (and sometimes required) to build a full AO system. For
+      instance, a component that is able to add metadata on the base
+      components, an interception framework, a component that is able
+      to perform code translation in order to advice the classes, a
+      weaver component, a configuration component, and so on.
+      
+    <p>To us, it would be great to be able to reuse different
+      components coming from different projects to build a full AO
+      system, and for three main reasons.</p>
+
+    <ul>
+      <li>Firstly, several components
+      already exist and it would be stupid to rebuild them.</li>
+
+      <li>Secondly,
+      various implementation of the same component may be useful and be
+      more-or-less suited depending on the environement. For instance:
+	<ul>
+	  <li>
+	    the program tranformation can be done at a bytecode or a
+	    the source-code level, at compile or at run time, using an
+	    interception or a code insertion mechanism depending on
+	    the implementation of the component that translates the
+	    base program, </li><li> the weaver may be used within a
+	    standard Java context or within an EJB context, which may
+	    imply some implementation differencies
+	  </li>
+	</ul>
+      <li>
+	Thirdly, having common interfaces and components would help in
+	reusing aspects on different weaving environements... this
+	will greatly improve sofware reusing.
+      </li>
+    </ul>
+
+    <p>For these reasons, we think that a standarization of the
+    interfaces of the aspect-oriented components would be great and
+    will bring great simplifications for the entire AOSD community,
+    but also for all the communities that will to use AOP in a close
+    future.
+
+
+    <hr>
+  </body>
+</html>

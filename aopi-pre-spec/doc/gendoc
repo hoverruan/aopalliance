@@ -1,0 +1,5 @@
+#!/bin/sh
+
+javadoc -sourcepath ../src -classpath ../classes -d . aopi aopi.reflect aopi.modif aopi.core aopi.conf aopi.weaving
+
+

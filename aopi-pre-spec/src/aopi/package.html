@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+  </head>
+  <body bgcolor="white">
+
+    <p>AOPI (AOP Interfaces) are a standard specification of a set of
+    useful or mandatory componants for aspect-oriented systems.
+
+    <p>The idea is to have a common set of abstract components
+    specifications, distributed under a Public Domain licence, that
+    will help all the projets to communicate and reuse components
+    coming from other projects.
+
+    <p>The AOPI project is a joint project between several software
+    engineering people who are interested in AOP or some other
+    related projects.
+
+
+    <h2>Overview</h2>
+
+<p style="text-align:center">
+    <img src="../figures/packages.png">
+</p>
+
+    <h2>Motiviations</h2>
+
+    <p>AOP is a new programming paradigm and set of techniques that
+    allows better separation and modularization of concerns.
+
+    <p>Several projects now provide AOP-related techniques such as
+    generic proxies, interceptors, or bytecode translators. Thus, we
+    can see a lot of new components or systems arising to perform
+    AOP or AOP-releated stuffs:
+
+    <ul>
+      <li>
+	<a href="http://www.eclipse.org/aspectj/">AspectJ</a>: an AO
+      source-level weaver. New Language.
+      </li><li>
+	<a href="http://aspectwerkz.sourceforge.net/">AspectWerkz</a>: an AO
+	framework (bytecode-level dynamic weaver+configuration).
+      </li><li>
+	<a href="http://jakarta.apache.org/bcel/">BCEL</a>: a bytecode
+      translator.
+      </li><li>
+	<a href="http://jac.aopsys.com">JAC</a>: an AO middleware
+      (bytecode-level dynamic weaver+configuration+aspects). Framework.
+       </li><li>
+	<a
+      href="http://www.csg.is.titech.ac.jp/~chiba/javassist/">Javassist</a>:
+      a bytecode translator with a high-level API.
+       </li><li>
+	<a
+      href="http://www.jboss.org/index.html?module=html&op=userdisplay&id=developers/projects/jboss/aop">JBoss-AOP</a>:
+      interception and metadata-based AO framework.
+       </li><li>
+	<a
+      href="http://javalab.cs.uni-bonn.de/research/jmangler/">JMangler</a>:
+      a bytecode translator with a composition framework for translations.
+       </li><li>
+	<a href="http://nanning.sf.net">Nanning</a>: an AO weaver (framework).
+       </li><li>
+	<a href="http://prose.ethz.ch/">Prose</a>: an AO
+      bytecode-level dynamic weaver (framework).
+       </li><li>
+	... and many others (<a
+      href="mailto:renaud@aopsys.com">email me</a> to add a new one)
+      </li>
+    </ul>
+
+    <p>All these projects have their onw goals and
+      speficities. However, several common basic components are still
+      usefull (and sometimes required) to build a full AO system. For
+      instance, a component that is able to add metadata on the base
+      components, a component that is able to perform code translation
+      in order to advice the classes, a weaver component, a
+      configuration component, and so on.
+      
+    <p>To us, it would be great to be able to reuse different
+      components coming from different projects to build a full AO
+      system, and for three main reasons.</p>
+
+    <ul>
+      <li>Firstly, several components
+      already exist and it would be stupid to rebuild them.</li>
+
+      <li>Secondly,
+      various implementation of the same component may be useful and be
+      more-or-less suited depending on the environement. For instance:
+	<ul>
+	  <li>
+	    the program tranformation can be done at a bytecode or a
+	    the source-code level, at compile or at run time, using an
+	    interception or a code insertion mechanism depending on
+	    the implementation of the component that translates the
+	    base program, </li><li> the weaver may be used within a
+	    standard Java context or within an EJB context, which may
+	    imply some implementation differencies
+	  </li>
+	</ul>
+      <li>
+	Thirdly, having common interfaces
+	would help in reusing aspects (for instance, we could imagine to
+	reuse a JAC or a JBoss aspect in other contexts than JAC or
+	JBoss and with other weavers -- e.g. Prose, Nanning, or
+	AspectWerkz weavers).
+      </li>
+    </ul>
+
+    <p>For these reasons, we think that a standarization of the
+    interfaces of the aspect-oriented components would be great and
+    will bring great simplifications for the entire AOSD community,
+    but also for all the communities that will to use AOP in a close
+    future (e.g. JBoss).
+          
+<!--
+<h2>Package Specification</h2>
+
+##### FILL IN ANY SPECS NEEDED BY JAVA COMPATIBILITY KIT #####
+<ul>
+  <li><a href="">##### REFER TO ANY FRAMEMAKER SPECIFICATION HERE #####</a>
+</ul>
+
+
+<h2>Related Documentation</h2>
+
+<p>For overviews, sources, tutorials, examples, guides, and tool documentation, please see:</p>
+<ul>
+  <li><a href=""></a>
+  <li><a href=""></a>
+</ul>
+
+-->
+
+<!-- Put @see and @since tags down here. -->
+
+</body>
+</html>

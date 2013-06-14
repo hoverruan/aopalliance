@@ -1,0 +1,233 @@
+body {
+  font-family: helvetica, sans-serif; 
+  background-color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.title {
+  font-family: helvetica, sans-serif; 
+  font-weight:bold;
+  background-color: white;
+  text-align:center;
+  font-size: large;
+}
+p, ul, ol, dl {  
+  margin-left: 4em;
+  margin-right: 4em; 
+}
+h2, h3, h4 { 
+  margin-right: 2em; 
+}
+ul,ol,dl { 
+  padding-left: 0;
+}
+li { 
+  margin-left: 3em;
+}
+li ul { 
+  margin-right: 0;
+}
+li .code { 
+  margin-left: 1em;
+}
+li p { 
+  margin-left: 0;
+}
+dt { 
+  font-weight: bold;
+  display: compact;
+}
+dd { 
+  display: block;
+}
+h1 {
+  color: #FFFFFF;
+  border: 1px solid #444488;
+  background-color: #222244;
+  padding: 0.1em 0.2em 0.1em 0.3em;
+  font-weight: bold;
+  font-size: large;
+}
+h1, h2, h3, h4 {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+h2, h3, h4 {
+  color: #A00000;
+  font-weight: normal;
+  font-size: large;
+}
+h4 {
+  font-style: italic;
+}
+.example {
+  margin-left: 2em;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+}
+.abstract { 
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.question {
+  color: black;
+  border: 1px solid #A0A0FF;
+  background-color: #A0A0FF;
+  padding: 0.1em 0.2em 0.1em 0.3em;
+  font-weight: bold;
+  font-style: normal;
+}
+.normal th {
+  background-color: #6677aa;
+}
+.normal td {
+  background-color: #E0E0FF;
+}
+.subtitle { 
+  color: #AA0000;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+pre {
+  margin-left: 5em;
+}
+A:link { color: blue}
+A:visited { color: purple}
+A:active { color: red}
+
+DIV.screenshot, DIV.figure { 
+  text-align: center;
+  margin-top: 1ex;
+}
+.netscapeonly {
+  display: none;
+}
+img { 
+  vertical-align: middle;
+}
+.screenshot IMG, .figure IMG { 
+  text-align: center;
+  float: none;
+  padding: 6px;
+}
+.figure IMG { 
+  border: 2px solid #AA0000;
+}
+.footer { 
+  border: 1px solid #0000AA;
+  color: #666666;
+  font-size: smaller;
+  margin-top: 2em;
+  padding: 0.5em;
+  background-color: #DDDDEE;
+}
+.selected { 
+  font-weight: bold;
+  background-color: #AA0000;
+  padding: 0.5em;
+  color: white;
+  border-style: none;
+  letter-spacing: 1px;
+}
+.unselected { 
+  padding: 0.5em;
+}
+.menu { 
+  background-color: #FFEEEE;
+  border: 1px solid #AA0000;
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+}
+.menu A:link {
+  color: #DD0000;
+}
+.menu A:visited {
+  color: #990000;
+}
+.menu tr td, .menu tr, .menu p, .menu tbody { 
+  padding: 0;
+  margin: 0;
+  border-style: none;
+}
+.code, .output { 
+  background-color: #DDDDEE;
+  border: 1px solid #DDDDEE;
+  white-space: pre;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 1em;
+}
+.code { 
+  background-color: #DDDDEE;
+}
+.output { 
+  background-color: #DDFFDD;
+}
+.class, .method { 
+  font-family: Courrier, monospace;
+}
+.news {
+  float: right;
+  width: 25%;
+  background-color: #fff;
+  border: 1px solid #444488;
+  padding: 0.3em;
+  font-size: smaller;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.news p, .news ul, .news ol {
+  margin: 0;
+  padding: 0;
+}
+.news h1 {
+  font-size: larger;
+  font-weight: bold;
+  margin: 0 0 0.4em 0;
+}
+.news img {
+  border-style: none;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.news li {
+  margin-left: 1em;
+}
+.main {
+  padding-top: 0.2em;
+}
+.flag {
+  vertical-align: middle;
+  margin-right: 0.2em;
+  height: 1em;
+}
+.note { 
+  font-style: italic; 
+  margin-left: 3em;
+  margin-right: 3em;
+}
+.warning { 
+  font-weight: bold; 
+}
+.toupdate { 
+  font-weight: bold; 
+  color: red;
+}
+.important { 
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+}
+.file { 
+}
+
+.valid img { 
+  border-style: none;
+}
+.valid a { 
+  border-style: none;
+}

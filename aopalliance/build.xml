@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+
+
+<project name="aopalliance" default="jar" basedir=".">
+
+
+	<!--
+	    Compile main source tree
+	-->
+	<target name="build">
+		<mkdir dir="build/classes" />
+		<javac destdir="build/classes"
+			debug="${debug}"
+			deprecation="false" optimize="false"
+			failonerror="false"
+			>
+			<src path="src"/>
+		</javac>
+	</target>
+
+
+	<!--
+	    Build one big JAR.
+	-->
+	<target name="jar" depends="build">
+		<jar jarfile="build/aopalliance.jar">
+			<fileset dir="build/classes">
+			</fileset>
+		</jar>
+	</target>
+
+    <target name="zip" depends="jar, javadoc">
+        <zip destfile="build/aopalliance.zip"
+            basedir="build" excludes="classes/**/*, classes"/>
+    </target>
+
+    <target name="javadoc"
+            description="Generate Javadocs.">
+        <mkdir dir="build/javadoc"/>
+        <javadoc sourcepath="src/main"
+                 packagenames="*"
+                 destdir="build/javadoc"
+                 author="true"
+                 protected="true">
+        </javadoc>
+    </target>
+
+    <target name="clean"
+            description="Remove generated files.">
+        <delete dir="build"/>
+    </target>
+
+</project>
